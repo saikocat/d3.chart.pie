@@ -22,5 +22,13 @@
         legend: true
       });
 
+  pie
+    .on('mouseover', function(d, i) {
+      console.log(d, i);
+    })
+    .on('mouseout', function(d, i) {
+      console.log(d, i);
+    });
+
   pie.draw(data);
 }());
